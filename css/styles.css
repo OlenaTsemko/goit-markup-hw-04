@@ -158,7 +158,6 @@ h6 {
   color: var(--accent-color);
   border-bottom: solid;
 }
-
 .header-address-list-item-link {
   display: flex;
   align-items: center;
@@ -179,6 +178,18 @@ h6 {
 /* Секция Герой */
 .hero {
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Hero.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: rgba(47, 48, 58, 0.8);
 }
 .hero > .container {
