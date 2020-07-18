@@ -80,6 +80,16 @@ h6 {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 
 /* Логотип в шапке */
 .logo {
@@ -111,9 +121,11 @@ h6 {
   display: flex;
   align-items: center;
 }
-.navigation-list-item:not(:last-child),
-.header-address-list-item:not(:last-child) {
+.navigation-list-item:not(:last-child) {
   margin-right: 50px;
+}
+.header-address-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .header-address-list {
   display: flex;
@@ -145,6 +157,23 @@ h6 {
 .navigation-list-item-link.current {
   color: var(--accent-color);
   border-bottom: solid;
+}
+
+.header-address-list-item-link {
+  display: flex;
+  align-items: center;
+}
+.icon-address {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-address.envelope {
+  width: 16px;
+  height: 11px;
+}
+.icon-address.smartphone {
+  width: 10px;
+  height: 15px;
 }
 
 /* Секция Герой */
