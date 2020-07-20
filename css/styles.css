@@ -71,11 +71,11 @@ h6 {
   margin-bottom: 0;
 }
 /* задать после того как уберу иконки с img  */
-/* img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -296,9 +296,6 @@ h6 {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.activity-list-item-img {
-  display: block;
-}
 .activity-list-item-description {
   margin-top: 0;
   margin-bottom: 0;
@@ -316,6 +313,7 @@ h6 {
 }
 
 /* Команда */
+
 .team {
   background-color: var(--background-secondary-color);
 }
@@ -331,9 +329,11 @@ h6 {
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.team-list-item-img {
-  display: block;
-  margin-bottom: 30px;
+.team-list-item-info {
+  padding-top: 30px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  padding-left: 32px;
 }
 .team-list-item-name {
   margin-bottom: 10px;
@@ -349,7 +349,7 @@ h6 {
 }
 .team-list-item-position {
   margin-top: 0;
-  margin-bottom: 16;
+  margin-bottom: 16px;
 
   font-weight: 400;
   color: var(--primary-text-color);
@@ -358,11 +358,6 @@ h6 {
 .social-list {
   display: flex;
   justify-content: space-between;
-}
-.team .social-list {
-  padding-right: 32px;
-  padding-bottom: 24px;
-  padding-left: 32px;
 }
 .social-list-item:not(:last-child) {
   margin-right: 10px;
@@ -603,9 +598,6 @@ h6 {
   margin-bottom: 30px;
 } */
 
-.portfolio-list-item-img {
-  display: block;
-}
 .portfolio-list-item-text-content {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
